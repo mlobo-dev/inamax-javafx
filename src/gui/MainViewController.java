@@ -3,9 +3,11 @@ package gui;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.Alert.AlertType;
 
 public class MainViewController implements Initializable {
 
@@ -17,12 +19,12 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	private void onMenuItemNewAction() {
-		System.out.println("Menu item New");
+		Alerts.showAlert("Alert Test", null, "This is an simple test for show information alerts", AlertType.INFORMATION);
 	}
 	
 	@FXML
 	private void onMenuItemAboutAction() {
-		System.out.println("Menu item About");
+		Alerts.showAlert("Alert Test", null, "This is an simple test for show Errors alerts", AlertType.ERROR);
 	}
 
 	@Override
@@ -30,4 +32,6 @@ public class MainViewController implements Initializable {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
 }
