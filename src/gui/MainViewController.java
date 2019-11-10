@@ -27,7 +27,7 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	private void onMenuItemNewAction() {
-		Alerts.showAlert("Alert Test", null, "This is an simple test for show information alerts", AlertType.INFORMATION);
+		loadView("/gui/Ocorrences.fxml", x -> {});
 	}
 	
 	@FXML
